@@ -1,0 +1,180 @@
+/*Styles for Form Box*/
+.Form {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 570px;
+    width: 450px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/*Styles for Login Title*/
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: arial;
+    color: #5646ff;
+}
+
+/*Styles for Input Types(Username, Password)*/
+.Username input,
+.Password input,
+.ConfirmPassword input {
+    background: none;
+    margin-left: 34px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 45px;
+    border: none;
+    transition: all .2s ease;
+    font-weight: bold;
+    display: block;
+    border: 1px solid #ccc;
+    transition: all .3s ease;
+    padding: 0 15px;
+}
+.Username input:focus,
+.Password input:focus,
+.ConfirmPassword input:focus {
+    outline: none;
+    box-shadow: 0 2px 0 #7066e0;
+    font-weight: bold;
+}
+.Username,
+.Password,
+.ConfirmPassword {
+    position: relative;
+    margin-bottom: 20px;
+}
+.Username label,
+.Password label,
+.ConfirmPassword label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 39px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #fff;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease;
+}
+.Username input:focus + label,
+.Password input:focus + label,
+.ConfirmPassword input:focus + label,
+.Username input:valid + label,
+.Password input:valid + label,
+.ConfirmPassword input:valid + label {
+    font-size: 15px;
+    top: -15px;
+    color: #7066e0;
+}
+.Username input:focus + label,
+.Password input:focus + label,
+.ConfirmPassword input:focus + label {
+    color: #7066e0;
+}
+
+/*Styles for Login Button*/
+.Login {
+    height: 45px;
+    width: 380px;
+    margin-left: 34px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bolder;
+    border: none;
+    background-color: #7066e0;
+    font-family: arial;
+    color: white;
+}
+.Login:hover {
+    opacity: 0.8;
+}
+.Login:active {
+    opacity: 0.5;
+}
+
+/*Styles for Signing-Up*/
+.LoginBox {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: arial;
+    font-size: 14px;
+}
+.Logintext {
+    margin-left: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #7066e0;
+    text-decoration: none;
+}
+.Logintext:hover {
+    text-decoration: underline;
+}
+
+/*Styles for Pop-Up*/
+.swal2-popup {
+    font-family: arial;
+}
+
+/*Styles for Other Login Types Button*/
+.Overhead {
+    font-family: arial;
+    font-weight: bold;
+    color: #afafaf;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.OtherLogin {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+
+}
+.LoginFacebook {
+    height: 45px;
+    width: 380px;
+    margin-left: 34px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bolder;
+    border: none;
+    background-color: #5646ff;
+    font-family: arial;
+    color: white;
+}
+.LoginFacebook:hover {
+    opacity: 0.8;
+}
+.LoginFacebook:active {
+    opacity: 0.5;
+}
+.LoginGoogle {
+    height: 45px;
+    width: 380px;
+    margin-left: 34px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bolder;
+    border: 1px solid #6c6c6c;
+    font-family: arial;
+    color: #6c6c6c;
+    background: white;
+}
+.LoginGoogle:hover {
+    background-color: rgba(0, 0, 0,0.05);
+}
+.LoginGoogle:active {
+    background-color: rgba(0, 0, 0,0.1);
+}
