@@ -1,0 +1,91 @@
+html, body {
+    background-color: rgb(255, 221, 227);
+}
+
+.Main-Box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.Image {
+    left: 50%;
+    transform: translateX(45%);
+    height: 200px;
+    width: 200px;
+}
+.Heart {
+    height: 200px;
+}
+
+.Text-Box {
+    margin-top: 15px;
+    height: 70px;
+    background: none;
+    padding: 20px;
+    border-radius: 30px;
+    border: solid 3px white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.Question-Text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: center;
+}
+
+.Yes {
+    margin-left: 25px;
+    margin-top: 18px;
+    width: 80px;
+    height: 30px;
+    background-color: pink;
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all .4s ease;
+    border: none;
+}
+
+.Yes:hover {
+    width: 85px;
+    margin-left: 20px;
+    background-color: rgb(233, 181, 189);
+    border: solid 2px white;
+}
+
+
+.No {
+    margin-left: 140px;
+    width: 80px;
+    height: 30px;
+    background-color: pink;
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all .4s ease;
+    border: none;
+}
+.No:hover {
+    width: 85px;
+    margin-left: 140px;
+    background-color: rgb(233, 181, 189);
+    border: solid 2px white;
+}
+
+.No:hover span{
+    display: none;
+}
+.No:hover::before {
+    content: "Yes";
+
+}
