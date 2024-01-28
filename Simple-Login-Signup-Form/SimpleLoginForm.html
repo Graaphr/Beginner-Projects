@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <!-- Importing stylesheet -->
+        <link rel="stylesheet" href="Styles/SimpleIntermediateLoginForm.css">
+
+        <!-- Inporting script(Local Script, Pop-Up Script) -->
+        <script src="Javascript/SimpleIntermediateLoginForm.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <!-- Form Box -->
+        <div class="Form">
+            <!-- Title -->
+            <p class="title">Login</p>
+
+            <!-- Input Types -->
+            <div class="Username">
+                <input type="text" id="Username" autocomplete="off" required>
+                <label for="Username">Username</label>
+            <div class="Password">
+                <input type="password" id="Password" autocomplete="off" required>
+                <label for="Password">Password</label>
+            </div>
+            
+            <!-- Forgot Password -->
+            <p class="Reset" onclick="Forgot()">Forgot password?</p>
+
+            <!-- Login Button -->
+            <button class="Login" onclick="Login()">Login</button>
+
+            <!-- Signing-Up Text -->
+            <div class="Signup">
+                <p>Don't have an account?<a href="SimpleIntermediateSignupForm.html" class="Signuptext">Sign-up</a></p>
+            </div>
+
+            <!-- Other Login Types -->
+            <p class="Overhead">Or</p>
+            <button class="LoginFacebook" aria-label="Facebook">Login with Facebook</button>
+            <button class="LoginGoogle" aria-label="Google" onclick="LoginGoogle()">Login with Google</button>
+        </div>
+    </body>
+</html>
