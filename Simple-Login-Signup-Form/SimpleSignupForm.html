@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <!-- Importing stylesheet -->
+        <link rel="stylesheet" href="Styles/SimpleIntermediateSignupForm.css">
+
+        <!-- Inporting script(Local Script, Pop-Up Script) -->
+        <script src="Javascript/SimpleIntermediateSignupForm.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <!-- Form Box -->
+        <div class="Form">
+            <!-- Title -->
+            <p class="title">Signup</p>
+
+            <!-- Input Types -->
+            <div class="Username">
+                <input type="text" id="Username" autocomplete="off" required>
+                <label for="Username">Username</label>
+            <div class="Password">
+                <input type="password" id="Password" autocomplete="off" required>
+                <label for="Password">Create password</label>
+            </div>
+            <div class="ConfirmPassword">
+                <input type="password" id="ConfirmPassword" autocomplete="off" required>
+                <label for="ConfirmPassword">Confirm password</label>
+            </div>
+
+            <!-- Login Button -->
+            <button class="Login" onclick="Signup()">Signup</button>
+
+            <!-- Signing-Up Text -->
+            <div class="LoginBox">
+                <p>Already have an account?<a href="SimpleIntermediateLoginForm.html" class="Logintext">Login</a></p>
+            </div>
+
+            <!-- Other Login Types -->
+            <p class="Overhead">Or</p>
+            <button class="LoginFacebook" aria-label="Facebook">Login with Facebook</button>
+            <button class="LoginGoogle" aria-label="Google" onclick="LoginGoogle()">Login with Google</button>
+        </div>
+    </body>
+</html>
